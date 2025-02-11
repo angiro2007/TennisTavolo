@@ -1,0 +1,70 @@
+html, body {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: #fbfbfb;
+	background-color: #232020;
+	padding: 5% 10%
+}
+
+#title > h1 {
+	font-size: 5rem;
+	font-weight: bold;
+}
+
+#title {
+	margin-bottom: 1rem;
+}
+
+.card {
+	border: none;
+	margin-right: 4%;
+	width: 27%;
+	transition: 0.3s;
+	cursor: pointer;
+	margin-bottom: 5%;
+}
+
+.card-img-top {
+	border-radius: 10px;
+	filter: brightness(0.4) grayscale(100%);
+	transition: 0.3s;
+}
+
+.card-img-top:where(#storia) {
+	filter: brightness(0.25) grayscale(100%);
+}
+
+.card:hover > .card-img-top {
+	filter: brightness(0.4) grayscale(0%);
+	transition: 0.3s;
+}
+
+.card:hover {
+	border: none;
+	scale: 105%;
+	transition: 0.3s;
+}
+
+.card-img-overlay {
+	color: #fbfbfb;
+}
+
+.card-title {
+	font-size: 1.5rem;
+}
+
+@media(767px <= width <= 1023px) {
+	#title > h1 {
+		font-size: 4rem;
+	}
+	
+	.card-body:where(.d-none) {
+		display: block !important;
+	}
+	
+	.card-body:not(:where(.d-none)) {
+		display: none;
+	}
+}
