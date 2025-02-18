@@ -8,10 +8,9 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	position: fixed;
 }
 
-ul {
+nav > ul {
 	list-style: none;
 	display: flex;
 	gap: 3rem;
@@ -23,7 +22,7 @@ ul {
 	-moz-box-shadow: 0 7px 31px rgba(0, 0, 0, 0.5)  ; 
 }
 
-li a {
+nav > li, a {
 	color: #fbfbfb;
 	font-size: 1.2rem;
 	font-weight: 600;
@@ -33,7 +32,7 @@ li a {
 	transition: 0.6s;
 }
 
-li a:hover {
+nav > li, a:hover {
 	background-color: var(--text-color--);
 }
 

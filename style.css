@@ -8,6 +8,14 @@ body {
 	padding: 5% 10%
 }
 
+p {
+	font-size: 1.4rem;
+}
+
+li > p {
+	font-size: 1.2rem;
+}
+
 #title > h1 {
 	font-size: 5rem;
 	font-weight: bold;
@@ -15,6 +23,11 @@ body {
 
 #title {
 	margin-bottom: 1rem;
+}
+
+.intro {
+	text-align: center;
+	margin: 3rem 0;
 }
 
 .card {
@@ -53,6 +66,19 @@ body {
 
 .card-title {
 	font-size: 1.5rem;
+}
+
+.table-tennissed-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.table-tennissed-list li {
+	background-image: url('imgs/table-tennis-rackets.png'); /* Usa un'icona personalizzata */
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 45px; /* Spazio per l'icona */
 }
 
 @media(767px <= width <= 1023px) {
