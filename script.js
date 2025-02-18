@@ -4,22 +4,23 @@ let modalitaDiGiocoCard = document.querySelector('#modalita-di-gioco');
 let colpiTecniciFondamentaliCard = document.querySelector('#colpi-tecnici-fondamentali');
 let storiaCard = document.querySelector('#storia');
 
-regolamentoCard = addEventListener('click', function() {
-	this.window.open("pages/regolamento.html", "_self");
+
+regolamentoCard.addEventListener('click', function() {
+	window.open("pages/regolamento.html", "_self");
 });
 
-regolamentoCard = addEventListener('click', function() {
-	this.window.open("pages/attrezzatura.html", "_self");
+attrezzaturaCard.addEventListener('click', function() {
+	window.open("pages/attrezzatura.html", "_self");
 });
 
-regolamentoCard = addEventListener('click', function() {
-	this.window.open("pages/modalita-di-gioco.html", "_self");
+modalitaDiGiocoCard.addEventListener('click', function() {
+	window.open("pages/modalita-di-gioco.html", "_self");
 });
 
-regolamentoCard = addEventListener('click', function() {
-	this.window.open("pages/colpi-tecnici-fondamentali.html", "_self");
+colpiTecniciFondamentaliCard.addEventListener('click', function() {
+	window.open("pages/colpi-tecnici-fondamentali.html", "_self");
 });
 
-regolamentoCard = addEventListener('click', function() {
-	this.window.open("pages/storia.html", "_self");
+storiaCard.addEventListener('click', function() {
+	window.open("pages/storia.html", "_self");
 });
