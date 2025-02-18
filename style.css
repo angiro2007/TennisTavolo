@@ -16,6 +16,11 @@ li > p {
 	font-size: 1.2rem;
 }
 
+video {
+	border-radius: 15px;
+	margin-bottom: 7rem;
+}
+
 #title > h1 {
 	font-size: 5rem;
 	font-weight: bold;
