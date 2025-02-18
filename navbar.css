@@ -8,12 +8,19 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: fixed;
 }
 
 ul {
 	list-style: none;
 	display: flex;
 	gap: 3rem;
+	background-color: #272525;
+	padding: 2rem;
+	border-radius: 25px;
+	box-shadow: 0 7px 31px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 0 7px 31px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 0 7px 31px rgba(0, 0, 0, 0.5)  ; 
 }
 
 li a {
