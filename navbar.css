@@ -4,10 +4,9 @@
 
 nav {
 	width: 100%;
-	padding: 2rem 5rem 2rem 5rem;
+	padding: 2rem 5rem;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	justify-content: center; /* Centra il contenuto della navbar */
 }
 
 nav > ul {
@@ -17,12 +16,12 @@ nav > ul {
 	background-color: #272525;
 	padding: 2rem;
 	border-radius: 25px;
-	box-shadow: 0 7px 31px rgba(0, 0, 0, 0.5)  ; 
-	-webkit-box-shadow: 0 7px 31px rgba(0, 0, 0, 0.5)  ; 
-	-moz-box-shadow: 0 7px 31px rgba(0, 0, 0, 0.5)  ; 
+	box-shadow: 0 7px 31px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 7px 31px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 7px 31px rgba(0, 0, 0, 0.5);
 }
 
-nav > li, a {
+nav ul li a {
 	color: #fbfbfb;
 	font-size: 1.2rem;
 	font-weight: 600;
@@ -32,7 +31,7 @@ nav > li, a {
 	transition: 0.6s;
 }
 
-nav > li, a:hover {
+nav ul li a:hover {
 	background-color: var(--text-color--);
 }
 
@@ -42,4 +41,21 @@ nav > li, a:hover {
 
 a:not(:where(.active)) {
 	background-color: transparent;
+}
+
+@media(width <= 768px) {
+	nav > ul {
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+    
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+    
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.7rem;
+        white-space: nowrap;
+    }
 }
