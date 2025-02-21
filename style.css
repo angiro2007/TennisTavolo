@@ -86,16 +86,44 @@ video {
 	padding-left: 45px; /* Spazio per l'icona */
 }
 
-@media(767px <= width <= 1023px) {
-	#title > h1 {
-		font-size: 4rem;
-	}
-	
-	.card-body:where(.d-none) {
-		display: block !important;
-	}
-	
+@media(width <= 1223px) {
 	.card-body:not(:where(.d-none)) {
-		display: none;
+		font-size: 1rem;
+	}
+	
+	@media(width <= 1075px) {
+		#title > h1 {
+			font-size: 4rem;
+		}
+		
+		.card-body:where(.d-none) {
+			display: block !important;
+		}
+		
+		.card-body:not(:where(.d-none)) {
+			display: none;
+		}
+		
+		.card-img-overlay {
+			padding: 1rem;
+		}
+
+		.card-title {
+			margin-bottom: 0.5rem;	
+		}
+		
+		.card-body {
+			padding: 0 5%;
+		}
+		
+		/* Mostra il testo alternativo su tablet */
+		.card-body:not(.d-none) {
+			display: none;
+		}
+		
+		.card-body.d-none {
+			display: block !important;
+		}
+
 	}
 }
